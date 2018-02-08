@@ -8,9 +8,13 @@
 
 void mian()
 {
+	uint32_t params;
+	uint32_t res = TEE_SUCCESS;
+		
 	
-
-
-
+	res = TEE_Initial_Context();
+	res = TEE_Open_session();
+	res = TEE_Invoke_command();
+	res = TEE_Close_session();
+	res = TEE_Finicial_Context();
 }
-
